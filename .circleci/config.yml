@@ -32,8 +32,9 @@ jobs:
     docker: 
       -image: circleci/node:13.8.0
     steps:
-    -run:
-      command: echo $my_name
+    
+    - run:
+        command: echo $my_name
 
 
 # Invoke jobs via workflows
