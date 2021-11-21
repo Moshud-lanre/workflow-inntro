@@ -25,12 +25,12 @@ jobs:
     steps: 
       - checkout
       - run:
-          name: " $my_name Say world"
+          name: "Say world"
           command:  "echo World"
 
   print-name:
     docker: 
-      -image: circleci/node:13.8.0
+      - image: circleci/node:13.8.0
     steps:
     
     - run:
