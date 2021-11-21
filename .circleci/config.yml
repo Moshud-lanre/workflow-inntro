@@ -33,7 +33,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run:
-          command: echo $my_name
+          command: echo $My_name
 
 
 # Invoke jobs via workflows
