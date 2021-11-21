@@ -25,7 +25,7 @@ jobs:
     steps: 
       - checkout
       - run:
-          name: " $my_name Say world"
+          name: "Say world"
           command:  "echo World"
 
   print-name:
