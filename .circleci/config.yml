@@ -28,12 +28,12 @@ jobs:
   #         name: "Say world"
   #         command:  "echo World"
 
-  print-name:
-    docker: 
-      - image: circleci/node:13.8.0
-    steps:
-      - run:
-          command: echo $My_name
+  # print-name:
+  #   docker: 
+  #     - image: circleci/node:13.8.0
+  #   steps:
+  #     - run:
+  #         command: echo $My_name
   
   hello_world_output:
     docker:
@@ -50,8 +50,8 @@ jobs:
     docker: 
       - image: circleci/node.13.8.0
     steps: 
-      -attach_workspace:
-        at: temp/
+      - attach_workspace:
+          at: temp/
       - run: cat temp/output.txt
 
 # Invoke jobs via workflows
