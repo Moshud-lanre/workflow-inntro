@@ -40,7 +40,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run: 
-          echo "Testing writing to a file" > output.txt
+          echo "Testing writing to a file" > ~/output.txt
       - persist_to_workspace:
           root: /tmp/workspace # this can be any root of my liking
           paths:
