@@ -42,7 +42,7 @@ jobs:
       - run: 
           echo "Testing writing to a file" > ~/output.txt
       - persist_to_workspace:
-          root: /tmp/workspace # this can be any root of my liking
+          root: /tmp # this can be any root of my liking
           paths:
             - output.txt
 
@@ -51,7 +51,7 @@ jobs:
       - image: circleci/node.13.8.0
     steps: 
       -attach_workspace:
-        at: /tmp
+        at: /temp
       - run: cat /tmp/output.txt
 
 # Invoke jobs via workflows
